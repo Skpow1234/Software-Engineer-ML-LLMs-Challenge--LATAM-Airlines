@@ -45,14 +45,15 @@ In addition, the DS considered relevant the creation of the following columns:
 1. Create a repository in **github** and copy all the challenge content into it. Remember that the repository must be **public**.
 
 2. Use the **main** branch for any official release that we should review. It is highly recommended to use [GitFlow](https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow) development practices. **NOTE: do not delete your development branches.**
-   
+
 3. Please, do not change the structure of the challenge (names of folders and files).
-   
+
 4. All the documentation and explanations that you have to give us must go in the `challenge.md` file inside `docs` folder.
 
 5. To send your challenge, you must do a `POST` request to:
     `https://advana-challenge-check-api-cr-k4hdbggvoq-uc.a.run.app/software-engineer`
     This is an example of the `body` you must send:
+
     ```json
     {
       "name": "Juan Perez",
@@ -61,10 +62,12 @@ In addition, the DS considered relevant the creation of the following columns:
       "api_url": "https://juan-perez.api"
     }
     ```
-    ##### ***PLEASE, SEND THE REQUEST ONCE.***
 
-    If your request was successful, you will receive this message:
-    ```json
+#### ***PLEASE, SEND THE REQUEST ONCE.***
+
+  If your request was successful, you will receive this message:
+
+  ```json
     {
       "status": "OK",
       "detail": "your request was received"
